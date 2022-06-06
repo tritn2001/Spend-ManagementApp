@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Thiết lập mục tiêu"
+        android:textColor="@color/toolbar_2"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        android:hint="Số tiền "
+        android:textColor="@color/black"
+        android:textColorHint="@android:color/darker_gray"
+        android:drawableStart="@drawable/ic_so_chi_tieu"
+        android:paddingLeft="10dp"
+        android:drawablePadding="20dp"
+        android:id="@+id/edSoTien_MucTieu"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        android:hint="Từ ngày "
+        android:textColor="@color/black"
+        android:textColorHint="@android:color/darker_gray"
+        android:drawableStart="@drawable/ic_lich"
+        android:paddingLeft="10dp"
+        android:drawablePadding="20dp"
+        android:id="@+id/edChuKyTuNgay"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        android:hint="Đến ngày "
+        android:textColor="@color/black"
+        android:textColorHint="@android:color/darker_gray"
+        android:drawableStart="@drawable/ic_lich"
+        android:paddingLeft="10dp"
+        android:drawablePadding="20dp"
+        android:id="@+id/edchuKyDenNgay"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+       <Button
+           android:layout_width="150dp"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="10dp"
+           android:text="Từ ngày"
+           android:id="@+id/btnMuctieu_denNgay"
+           android:layout_marginLeft="20dp"
+           />
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="đến ngày"
+            android:id="@+id/btnMuctieu_tuNgay"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="40dp"
+            />
+    </LinearLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lưu"
+        android:layout_margin="30dp"
+        android:id="@+id/btnSaveMuctieu"
+        />
+
+</LinearLayout>

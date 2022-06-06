@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.ChiFragment">
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="vertical"
+         android:layout_marginTop="40dp"
+         >
+         <Button
+             android:id="@+id/btnToDay"
+             android:layout_width="50dp"
+             android:layout_height="150dp"
+             android:text="Hôm nay"
+             android:background="@drawable/boxshadow"
+             android:textColor="@color/white"
+             android:textStyle="bold"
+             />
+         <Button
+             android:id="@+id/btnMonth"
+             android:layout_width="50dp"
+             android:layout_height="150dp"
+             android:text="Tháng này"
+             android:background="@drawable/boxshadow"
+             android:layout_marginTop="30dp"
+             android:textColor="@color/white"
+             android:textStyle="bold"
+             />
+         <Button
+             android:id="@+id/btnYear"
+             android:layout_width="50dp"
+             android:layout_height="150dp"
+             android:text="Năm nay"
+             android:background="@drawable/boxshadow"
+             android:layout_marginTop="30dp"
+             android:textColor="@color/white"
+             android:textStyle="bold"
+             />
+     </LinearLayout>
+    <ListView
+        android:id="@+id/lvKhoanChi"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="50dp"
+        >
+        /></ListView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabKhoanChi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:layout_margin="18dp"
+        android:backgroundTint="#03A9F4"
+        android:src="@drawable/ic" />
+
+
+</FrameLayout>
